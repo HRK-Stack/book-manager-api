@@ -1,7 +1,7 @@
 {
   "name": "book-manager-api",
   "version": "1.0.0",
-  "description": "file based api endpoints to manage books ",
+  "description": "File-based API endpoints to manage books.",
   "homepage": "https://github.com/HRK-Stack/book-manager-api#readme",
   "bugs": {
     "url": "https://github.com/HRK-Stack/book-manager-api/issues"
@@ -13,13 +13,16 @@
   "license": "ISC",
   "author": "HRK-Stack",
   "type": "module",
-  "main": "server.js",
+  "main": "src/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "node src/server.js"
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "body-parser": "^2.2.0",
     "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
   }
 }
